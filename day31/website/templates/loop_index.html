@@ -11,10 +11,13 @@
         <h2>loop.index 예제</h2>
         <ul>
             {% for item in items %}
+                {% if loop.index < 3 %}
             <li>{{ loop.index }} - {{ item }}</li>
+                {% endif %}
             {% endfor %}
         </ul>
-
+        <!-- loop.index -> 1부터 시작
+             loop.index0 -> 0부터 시작 -->
     </div>
 </body>
 </html>
