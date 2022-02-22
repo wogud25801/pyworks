@@ -1,9 +1,9 @@
 import re
 
-pattern1 = re.compile("[a-z]")          # 정규 표현식
-result = pattern1.match("afternoon")    # 처음 문자부터 검색
-print(result)
+str1 = "Two is too"
 
-pattern2 = re.compile("[0-9]+\s[a-z]+")
-result2 = pattern2.match("2022 python")
-print(result2)
+m1 = re.findall("T[wo]o", str1) #리스트로 반환
+print(m1)
+
+m2 = re.findall("T[wo]o", str1, re.IGNORECASE) #IGNORECASE- 대소문자 허용
+print(m2)

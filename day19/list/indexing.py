@@ -1,5 +1,5 @@
-# 인덱싱과 슬라이싱
-s = "20220126sunny"
+#인덱싱과 슬라이싱
+s = "20220126Sunny"
 year = s[:4]
 day = s[4:8]
 weather = s[8:]
@@ -8,7 +8,7 @@ print(year)
 print(day)
 print(weather)
 
-# 문자열 수정하기
+#문자열 수정하기
 s2 = "Pithon"
 #s2[1] = 'y' - 문자열 수정 불가함
 s2 = s2[0] + 'y' + s2[2:]

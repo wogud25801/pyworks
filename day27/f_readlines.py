@@ -1,16 +1,16 @@
-# readlines() - 데이터를 리스트로 변환
+#readlines() - 데이터를 리스트로 반환
 # 인덱싱 또는 슬라이싱 가능
-
 try:
     f = open("c:/pyfile/season.txt", 'r')
     """
-    # 한줄 읽기
-    season = f.readlines()
+    # 한 줄 읽기
+    season = f.readline()
     print(season)
     """
+
     # 리스트로 반환
     season = f.readlines()
-    print(season)       # 리스트 객체 출력
+    print(season)  # 리스트 객체 출력
     print(season[0])
     print(season[-1])
     print(season[2:])
@@ -19,7 +19,7 @@ try:
     for s in season:
         #print(s)
         #print(s, end='')
-        print(s.strip()) #공백 제거
+        print(s.strip())  #공백 제거
     f.close()
 except:
     print("파일을 열 수 없습니다.")

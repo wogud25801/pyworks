@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>website</title>
-    <link rel ="stylesheet" href="{{ url_for('static', filename ='style.css') }}">
-    <!-- urlfor(경로) 함수 사용-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<!--    urlfor(경로) 함수 사용-->
 </head>
 <body>
     <div id="container">
-        <h1>메인 페이지 입니다.</h1>
+        <h1>메인 페이지입니다.</h1>
         <h2>주소 표시줄에 아래의 경로를 입력하세요</h2>
-        <p> 127.0.0.1:5000 -> index 페이지 loading</p>
-        <p> 127.0.0.1:5000/season -> season 페이지 loading</p>
-        <p> 127.0.0.1:5000/register -> 회원가입 페이지 loading</p>
-        <p> 127.0.0.1:5000/even_odd -> 짝수/홀수 페이지 loading</p>
+        <p> 127.0.0.1:5000 -> index 페이지 로딩</p>
+        <p> 127.0.0.1:5000/season -> season 페이지 로딩</p>
+        <p> 127.0.0.1:5000/register -> 회원가입 페이지 로딩</p>
+        <p> 127.0.0.1:5000/even_odd -> 짝수/홀수 판정 페이지 로딩</p>
         <div>
-            <img id="pic" src="{{ url_for('static', filename='coffee-gray.jpg') }}">
+            <img src="{{ url_for('static', filename='coffee-gray.jpg') }}" id="pic">
         </div>
     </div>
 
-    <script src="{{ url_for('static', filename='main_js.js') }}"><</script>
+    <script src="{{ url_for('static', filename='main_js.js') }}"></script>
 </body>
 </html>

@@ -1,15 +1,16 @@
-class Person:
-    def __init__(self, name, age):
-        self.name = name
+
+class Person:  #부모 클래스
+    def __init__(self, name, age):  #생성자(함수)
+        self.name = name            #멤버변수
         self.age = age
 
-    def getname(self):
+    def getname(self):              #멤버 메서드(함수)
         return self.name
 
     def getage(self):
         return self.age
 
-class Employee(Person): # Person 클래스를 상속 받음
+class Employee(Person): # Person 클래스를 상속 받음, 자식클래스
     pass
 
 if __name__ == "__main__":
@@ -18,8 +19,8 @@ if __name__ == "__main__":
     print("나이 :", e1.getage())
 
     e2 = Employee("진", 28)
-    print("이름 :" + e2.getname())
-    print("나이 :" + str(e2.getage()))
+    print("이름 : " + e2.getname())
+    print("나이 : " + str(e2.getage()))
 
     """
     p1 = Person('뷔', 28)

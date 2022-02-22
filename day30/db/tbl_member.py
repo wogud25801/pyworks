@@ -1,4 +1,5 @@
 import sqlite3
+
 def getconn():
     # db에 접속
     conn = sqlite3.connect("c:/dbtest/test.db")
@@ -26,7 +27,7 @@ def insert_member():
     conn = getconn()
     cur = conn.cursor()
     sql = "INSERT INTO member(mid, passwd, name, age) VALUES (?, ?, ?, ?)"
-    cur.execute(sql, ('10002', 'ahn1004', '안산', 20))
+    cur.execute(sql, ('10002', 'ahn1004', '안산', 20 ))
     conn.commit()
     conn.close()
 
@@ -41,7 +42,6 @@ def select_member():
     for i in rs:
         print(i)
     conn.close()
-
 
 #conn = getconn()
 #print("연결", conn)

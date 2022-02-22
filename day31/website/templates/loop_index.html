@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>website</title>
-    <link rel ="stylesheet" href="{{ url_for('static', filename ='style.css') }}">
-    <!-- urlfor(경로) 함수 사용-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<!--    urlfor(경로) 함수 사용-->
 </head>
 <body>
     <div id="container">
@@ -12,7 +12,7 @@
         <ul>
             {% for item in items %}
                 {% if loop.index < 3 %}
-            <li>{{ loop.index }} - {{ item }}</li>
+                <li> {{ loop.index }} - {{ item }}</li>
                 {% endif %}
             {% endfor %}
         </ul>

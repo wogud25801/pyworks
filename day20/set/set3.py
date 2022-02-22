@@ -15,13 +15,14 @@ s.clear()
 # 집합 객체 출력
 print(s)
 
+
 # in 집합
 fruit = {"사과", "바나나", "포도", "사과"}
 print("바나나" in fruit)
 print("포도" not in fruit)
 
 for i in fruit:
-    print(i, end = ' ') # 순서가 없다. 중복 불허ㅐ
+    print(i, end=' ')  # 순서가 없다. 중복 불허
 
 print()
 print(fruit)

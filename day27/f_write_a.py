@@ -6,6 +6,5 @@ f = open("c:/pyfile/test.txt", 'a')
 # 파일 쓰기
 f.write("안녕하세요\n")
 
-
 # 파일 닫기
 f.close()

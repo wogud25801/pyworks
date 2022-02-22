@@ -5,9 +5,10 @@ f = open("c:/pyfile/season.txt", 'w')
 
 for i in season:
     f.write(i + '\n')
+
 """
 n = len(season)
-for i in range(0, len(season)):
+for i in range(0, n):
     f.write(season[i] + '\n')
 """
 f.close()
@@ -22,3 +23,5 @@ try:
     f.close()
 except:
     print("파일을 열 수 없습니다.")
+
+

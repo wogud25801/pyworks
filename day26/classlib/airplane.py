@@ -14,3 +14,5 @@ class AirPlane:
 
     def land(self):
         print("비행기가 착륙합니다.")
+
+
